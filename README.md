@@ -42,5 +42,5 @@ Press the "Sync fork" button on GitHub.
 
 1. `git remote add upstream https://github.com/KaiAppAkademie/batch_3_task_app`
 2. `git fetch upstream`
-3. `git rebase upstream/main --no-commit`
+3. `git merge upstream/main --no-commit`
 4. Sync changes
