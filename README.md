@@ -40,7 +40,7 @@ Press the "Sync fork" button on GitHub.
 
 ### CLI
 
-1. `git remote add upstream https://github.com/DavidAppAkademie/task_app`
+1. `git remote add upstream https://github.com/KaiAppAkademie/batch_3_task_app.git`
 2. `git fetch upstream`
 3. `git rebase upstream/main`
 4. Sync changes
