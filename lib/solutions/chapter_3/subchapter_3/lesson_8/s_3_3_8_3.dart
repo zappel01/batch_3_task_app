@@ -8,7 +8,6 @@ String formatSeconds(int seconds) {
   return "${hours}:${minutes}:${seconds}";
 }
 
-
 class FormattedTime {
   final int hours;
   final int minutes;

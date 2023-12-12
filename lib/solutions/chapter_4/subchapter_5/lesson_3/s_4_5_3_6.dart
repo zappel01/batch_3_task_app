@@ -5,16 +5,18 @@ class S4536 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-          child: ListView(
-            shrinkWrap: true,
-            children: products.map((product) {
-              return ListTile(
-                leading: const Icon(Icons.shopping_cart),
-                title: Text(product.name),
-                subtitle: Text("${product.price} €"),
-              );
-            }).toList(),
-          ),
+      child: ListView(
+        shrinkWrap: true,
+        children: products.map(
+          (product) {
+            return ListTile(
+              leading: const Icon(Icons.shopping_cart),
+              title: Text(product.name),
+              subtitle: Text("${product.price} €"),
+            );
+          },
+        ).toList(),
+      ),
     );
   }
 }

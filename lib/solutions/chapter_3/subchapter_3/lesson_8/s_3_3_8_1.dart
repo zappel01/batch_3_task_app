@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 int reverseNumber(int input) {
   var reverseNumber = 0;
-  int remainder ;
+  int remainder;
 
   while (input > 0) {
     remainder = input % 10;
