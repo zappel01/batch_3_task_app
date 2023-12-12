@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
@@ -6,8 +7,13 @@ import 'package:flutter/material.dart';
 /// This functions tries to hack a 4 digit PIN.
 /// It returns the PIN as a string.
 String hackPin() {
-  // Lösung hier einfügen
-  throw UnimplementedError();
+  Random random = Random();
+  int number;
+  do {
+    // Generate a random 4-digit number
+    number = 1000 + random.nextInt(9000); //Range is 0-8999!
+  } while (!_isPinCorrect(number.toString()));
+  return number.toString();
 }
 
 // ignore: unused_element

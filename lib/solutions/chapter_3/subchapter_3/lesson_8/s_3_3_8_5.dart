@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
 bool isPalindrome(String input) {
-  // Lösung hier einfügen
-  throw UnimplementedError();
+  for (int i = 0; i < input.length / 2; i++) {
+    if (input[i] != input[input.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
 }
 
 class S3385 extends StatefulWidget {
