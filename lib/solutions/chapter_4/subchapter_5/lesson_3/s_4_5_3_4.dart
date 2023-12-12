@@ -5,11 +5,7 @@ class S4534 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
-      children: [
-      Text("App"),
-       SizedBox(width: 64),
-      Text("Akademie")
-    ],
+      children: [Text("App"), SizedBox(width: 64), Text("Akademie")],
     );
   }
 }
